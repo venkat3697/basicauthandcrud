@@ -1,0 +1,36 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username":"Naveen",
+    "password":"123456"
+}
+###
+GET http://localhost:3000/users
+###
+
+PUT http://localhost:3000/update
+Content-Type: application/json
+
+{
+    "username":"Naveen",
+    "newPassword":"789456"
+}
+###
+
+GET http://localhost:3000/login
+Content-Type: application/json
+
+{
+     "username":"Naveen",
+    "password":"789456"
+}
+
+###
+DELETE http://localhost:3000/delete
+Content-Type: application/json
+
+{
+    "username":"Naveen"
+}
+
